@@ -14,6 +14,10 @@ class CoffeePlanner extends Component {
   }
 
   onSelection = (valueId, title) => {
+    this.setState({
+      show: false,
+      error: false,
+    })
     if (valueId >= 0 && valueId <= 2) {
       this.setState({
         section0: title,
