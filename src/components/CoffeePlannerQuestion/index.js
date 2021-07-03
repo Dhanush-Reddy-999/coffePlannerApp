@@ -24,7 +24,7 @@ class CoffeePlannerQuestion extends Component {
     const {questionTitle, optionsList} = this.props
     const {checkId} = this.state
     return (
-      <div className="question-container">
+      <li className="question-container" type="none">
         <h1 className="question-title">{questionTitle}</h1>
         <ul className="options">
           {optionsList.map(eachItem =>
@@ -49,7 +49,7 @@ class CoffeePlannerQuestion extends Component {
             ),
           )}
         </ul>
-      </div>
+      </li>
     )
   }
 }
