@@ -81,7 +81,7 @@ class CoffeePlanner extends Component {
             </p>
           </div>
         </div>
-        <div className="bottom-container">
+        <ul className="bottom-container">
           {coffeePlannerList.map(eachItem => (
             <CoffeePlannerQuestion
               questionTitle={eachItem.questionTitle}
@@ -90,7 +90,7 @@ class CoffeePlanner extends Component {
               onSelection={this.onSelection}
             />
           ))}
-        </div>
+        </ul>
         <div className="button-container">
           <button type="button" className="button" onClick={this.createPlan}>
             Create my plan
